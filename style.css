@@ -1,0 +1,100 @@
+.hat{
+    position: absolute;
+    width: 350px;
+    left: 240px;
+    border-top: solid 250px currentColor;
+    border-radius: 10% 10% 0 0;
+    color: rgb(0, 0, 0);
+}
+.basehat{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 200px;
+
+    left: 163px;
+    border-bottom: solid 20px currentColor;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+}
+.eyelashes1{
+    width: 80px;
+    height: 80px;
+    left: 279px;
+    top: 300px;
+    border-radius: 20% 20% 0 0;
+    border-top: solid 10px currentColor;
+    position: absolute;
+    color: black;
+    animation: eyemovement 1s ease-in-out infinite;
+}
+.eyelashes2{
+    width: 80px;
+    height: 80px;
+    left: 456px;
+    top: 300px;
+    border-radius: 20% 20% 0 0;
+    border-top: solid 10px currentColor;
+    position: absolute;
+    color: black;
+    animation: eyemovement 1s ease-in-out infinite;
+}
+.eyes{
+    width: 80px;
+    height: 80px;
+    left: 45px;
+    top: 290px;
+    border-radius: 50%;
+    position: absolute;
+    color: black;
+    box-shadow: 
+        240px 40px 0 0 currentColor,
+        410px 40px 0 0 currentColor;
+}
+.mustache{
+    width: 100px;
+    height: 100px;
+    left: 145px;
+    top: 220px;
+    border-radius: 50%;
+    position: absolute;
+    color: black;
+    box-shadow:
+        160px 240px 0 0 currentColor,
+        280px 240px 0 0 currentColor;
+}
+.mustache::before{
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 118px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 100px currentColor;
+    border-radius: 0 0 0 50%;
+    transform: rotate(-10deg);
+    transform-origin: right 210px;
+}
+.mustache::after{
+    content: "";
+    position: absolute;
+    left: 316px;
+    top: 119px;
+    width: 210px;
+    height: 120px;
+    border-bottom: solid 100px currentColor;
+    border-radius: 0 0 50% 0;
+    transform: rotate(10deg);
+    transform-origin: left 210px;
+}
+@keyframes eyemovement {
+    0%{
+        top: 300px;
+    }
+    50%{
+        top: 290px;
+    }
+    100%{
+        top: 300px;
+    }
+}
